@@ -1,26 +1,40 @@
+/* /Users/shin-junwoo/슈퍼코딩/코드 설명/250806/src/components/Payments/ExpenseDate.css */
+
+/* 'expense-date' 클래스를 가진 요소(날짜 전체를 감싸는 컨테이너)의 스타일입니다. */
 .expense-date {
+  /* 자식 요소(월, 년, 일)를 세로로 배치하기 위해 flexbox를 사용합니다. */
   display: flex;
   flex-direction: column;
+  /* 컨테이너의 너비와 높이를 5.5rem으로 고정하여 정사각형 모양을 만듭니다. */
   width: 5.5rem;
   height: 5.5rem;
+  /* 1px 두께의 연한 회색(#ececec) 테두리를 추가합니다. */
   border: 1px solid #ececec;
+  /* 배경색을 어두운 회색(#2a2a2a)으로 설정합니다. */
   background-color: #2a2a2a;
+  /* 내부 텍스트 색상을 흰색으로 설정합니다. */
   color: white;
+  /* 모서리를 12px만큼 둥글게 만들어 Card 컴포넌트와 디자인 통일성을 맞춥니다. */
   border-radius: 12px;
+  /* 자식 요소들을 교차 축(가로)의 중앙에 정렬합니다. */
   align-items: center;
+  /* 자식 요소들을 주 축(세로)의 중앙에 정렬합니다. */
   justify-content: center;
 }
 
+/* '월'을 표시하는 요소의 스타일입니다. (BEM 네이밍 컨벤션: 블록__요소) */
 .expense-date__month {
-  font-size: 0.75rem;
-  font-weight: bold;
+  font-size: 0.75rem; /* 작은 글자 크기 */
+  font-weight: bold; /* 굵은 글씨체 */
 }
 
+/* '년'을 표시하는 요소의 스타일입니다. */
 .expense-date__year {
-  font-size: 0.75rem;
+  font-size: 0.75rem; /* 작은 글자 크기 */
 }
 
+/* '일'을 표시하는 요소의 스타일입니다. */
 .expense-date__day {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.5rem; /* 큰 글자 크기로 강조 */
+  font-weight: bold; /* 굵은 글씨체 */
 }
